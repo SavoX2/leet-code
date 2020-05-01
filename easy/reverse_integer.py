@@ -39,7 +39,8 @@ class Solution:
         # return res
 
         res = 0
-        # because python is stupid and % doesn't work as intended
+        # % is modulo operator, and not remainder, this is why we set x=|x|
+        # problem example: 5 % 3 = 2, but -5 % 3 = 1
         neg = x < 0
         x = abs(x)
         while x != 0:
