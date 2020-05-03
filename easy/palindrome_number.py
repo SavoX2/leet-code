@@ -37,7 +37,7 @@ class Solution(object):
             x //= 10
         return original_x == inverted_x
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sol = Solution()
     print(sol.isPalindrome(121))
     print(sol.isPalindrome(-121))

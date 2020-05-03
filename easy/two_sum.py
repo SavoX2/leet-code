@@ -9,6 +9,7 @@
 # Because nums[0] + nums[1] = 2 + 7 = 9,
 # return [0, 1].
 
+
 class Solution:
     def twoSum(self, nums, target):
         """
@@ -19,13 +20,14 @@ class Solution:
         lookup_table = {}
         for index, num in enumerate(nums):
             complement = target - num
-            if complement in lookup_table: 
+            if complement in lookup_table:
                 return [lookup_table[complement], index]
-            else: 
+            else:
                 lookup_table[num] = index
         return None
 
-if __name__ == "__main__":
+
+if __name__ == '__main_':
     sol = Solution()
     print(sol.twoSum([2, 7, 11, 15], 9))
 

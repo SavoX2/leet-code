@@ -52,7 +52,7 @@ class Solution:
         
         return res if not neg else -res
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sol = Solution()
     print(sol.reverse(123))
     print(sol.reverse(-123))

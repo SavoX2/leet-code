@@ -63,7 +63,7 @@ class Solution(object):
 
         return result
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     sol = Solution()
     print(sol.romanToInt('III'))
     print(sol.romanToInt('IV'))
