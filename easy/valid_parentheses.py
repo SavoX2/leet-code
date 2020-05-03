@@ -41,7 +41,7 @@ class Solution(object):
         if not s:
             return True
         stack = []
-        if not s or len(s) == 0 or s[0] == ']' or s[0] == '}' or s[0] == ')': 
+        if s[0] == ']' or s[0] == '}' or s[0] == ')': 
             return False
         for c in s:
             if c == '[' or c == '{' or c == '(':
@@ -65,5 +65,5 @@ if __name__ == '__main__':
     print(sol.isValid('([)]'))
     print(sol.isValid('{[]}'))
 
-# Runtime: 16 ms, faster than 89.87% of Python online submissions for Valid Parentheses.
-# Memory Usage: 12.8 MB, less than 5.04% of Python online submissions for Valid Parentheses.
+# Runtime: 12 ms, faster than 98.18% of Python online submissions for Valid Parentheses.
+# Memory Usage: 13 MB, less than 5.04% of Python online submissions for Valid Parentheses.
